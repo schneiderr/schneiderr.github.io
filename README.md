@@ -1,2 +1,2 @@
-schneiderr.github.io
+Blog
 ====================
