@@ -4,10 +4,26 @@ title: Ryan Schneider
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+	<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">First Project.</h2>
+				<p>content content content.....</p>
+			</div>
+			<div class="col-md-5">
+				<img class="featurette-image img-responsive" data-src="">
+			</div>
+		</div>	
+
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-5">
+				<img class="featurette-image img-responsive" data-src="">
+			</div>
+			<div class="col-md-7">
+				<h2 class="featurette-heading">First Project.</h2>
+				<p>content content content.....</p>
+			</div>
+		</div>	
 </div>
