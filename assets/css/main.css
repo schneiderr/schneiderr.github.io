@@ -227,6 +227,9 @@ ul.posts span {
 .margin-bottom--2 {
     margin-bottom: -2px;
 }
+.margin-bottom--10 {
+    margin-bottom: -10px;
+}
 
 .nowrap {
     white-space: nowrap;
@@ -240,4 +243,11 @@ ul.posts span {
 
 .panel-body {
     padding-bottom: 0;
+}
+
+.ul-nb
+{
+    list-style-type: none;
+    padding:0; 
+    margin:0;
 }
