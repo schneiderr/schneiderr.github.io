@@ -158,3 +158,86 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/*
+ * Custom Panel
+ *
+ * Odds and ends for best display.
+ */
+
+
+.panel-scarlet {
+  background-color: #fff;
+  border-color: #bb0000;
+}
+.panel-scarlet > .panel-heading {
+  background-color: #bb0000;
+  color: #fff;
+  border-color: #bb0000;
+}
+.panel-scarlet > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #bb0000;
+}
+
+.panel-scarlet > .panel-heading .badge {
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+.panel-gray {
+  background-color: #fff;
+  border-color: #999;
+}
+.panel-gray > .panel-heading {
+  background-color: #666;
+  color: #fff;
+  border-color: #999;
+}
+.panel-gray > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #999;
+}
+
+/*
+ * Miscellaneous
+ *
+ * Odds and ends for best display.
+ */
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top--30 {
+    margin-top: -30px;
+}
+
+.margin-top-bottom-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom--2 {
+    margin-bottom: -2px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.dl-horizontal > dd:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.panel-body {
+    padding-bottom: 0;
+}
