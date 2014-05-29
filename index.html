@@ -1,14 +1,16 @@
 ---
 layout: default
 title: Ryan Schneider
+slug: 'index'
+base_url: "/"
 ---
-
+<canvas class="loader"></canvas>
 <div id="home">
 
-	<hr class="featurette-divider">
+	<div class="featurette-divider">
 		<div class="row featurette">
 			<div class="col-md-7">
-				<h2 class="featurette-heading">First Project.</h2>
+				<h2 class="featurette-heading"><span class="element"></span></h2>
 				<p>content content content.....</p>
 			</div>
 			<div class="col-md-5">
@@ -18,3 +20,35 @@ title: Ryan Schneider
 
 		<hr class="featurette-divider">
 </div>
+
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["First Project."],
+        typeSpeed: 0
+      });
+  });
+
+
+$(document).ready(function() {
+
+	$('#home').hide();
+
+	$('.loader').ClassyLoader({
+
+		diameter: 60,
+  		fontSize: '20px'
+  	});
+
+  	setTimeout(function() {
+		$('.loader').fadeOut(500);
+	}, 600);
+
+	setTimeout(function() {
+     	$('#home').fadeIn(500);
+	}, 1200);
+
+});
+</script>
+
+</script>
