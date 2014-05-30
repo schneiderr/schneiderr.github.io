@@ -233,6 +233,9 @@ ul.posts span {
 .margin-bottom--10 {
     margin-bottom: -10px;
 }
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
 
 .nowrap {
     white-space: nowrap;
@@ -253,4 +256,13 @@ ul.posts span {
     list-style-type: none;
     padding:0; 
     margin:0;
+
 }
+.ul-nb-indent
+{
+    list-style-type: none;
+    padding:0; 
+    margin:0;
+    position:relative;
+    left: -5px;
+    text-indent: 10px
