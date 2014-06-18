@@ -202,6 +202,11 @@ ul.posts span {
  *
  * Odds and ends for best display.
  */
+.margin-lb-20 {
+    margin-left: 20px !important;
+    margin-bottom: 20px !important;
+
+}
 
 .margin-top-20 {
     margin-top: 20px !important;
@@ -221,6 +226,9 @@ ul.posts span {
 
 .margin-bottom-20 {
     margin-bottom: 20px;
+}
+.margin-bottom-top-10 {
+    margin-bottom: 10px;
 }
 
 .margin-bottom-15 {
@@ -266,10 +274,4 @@ ul.posts span {
     position:relative;
     left: -5px;
     text-indent: 10px
-}
-.item{
-    background: #9A9A9C;    
-    text-align: center;
-    height: 500px !important;
-    width: auto;
 }

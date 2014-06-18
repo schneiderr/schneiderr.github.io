@@ -6,28 +6,11 @@ base_url: "/"
 ---
 <canvas class="loader"></canvas>
 <div id="home">
-
-	<div class="featurette-divider">
-		<div class="row featurette">
-			<div class="col-md-7">
-				<h2 class="featurette-heading"><span class="element"></span></h2>
-				<p>content content content.....</p>
-			</div>
-			<div class="col-md-5">
-				<img class="featurette-image img-responsive" data-src="">
-			</div>
-		</div>	
-
-		<hr class="featurette-divider">
+<h1 class="element"></h1>
 </div>
 
 <script>
-  $(function(){
-      $(".element").typed({
-        strings: ["First Project."],
-        typeSpeed: 0
-      });
-  });
+ 
 
 
 $(document).ready(function() {
@@ -47,6 +30,15 @@ $(document).ready(function() {
 	setTimeout(function() {
      	$('#home').fadeIn(500);
 	}, 1200);
+	setTimeout(function(){
+
+		 $(function(){
+		      $(".element").typed({
+		        strings: ["More to Come..."],
+		        typeSpeed: 500
+		      });
+		  });
+	},2000);
 
 });
 </script>
