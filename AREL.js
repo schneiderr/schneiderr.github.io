@@ -1,0 +1,1 @@
+<Files baseURL="http://schneiderr.github.io/"><AREL_XML><url>imr_index.xml</url></AREL_XML><3DMaps><url>map-biacore.zip</url><url>map-card_case.zip</url><url>map-map-liquid_tub.zip</url><url>map-right_half_tubes_and_arm.zip</url><url>map-robotic_arm.zip</url></3DMaps></Files>
