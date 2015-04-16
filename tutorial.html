@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="arel.js"></script>
+        <script src="logic.js"></script>
+        <script src="ARWebviewCustomization.js"></script>
+        <link rel="stylesheet" type="text/css" href="tutorial.css">
+        <title>IMR-Augmented_Reality_Trainer</title>
+    </head>
+    <body>
+        <div id="draggableContainer">
+            <div id="info">
+                Please point your device to the Biacore machine.
+                <img src= "../Asset/Pointing_to_Biacore_3000.png"/>
+            </div>
+            
+            <div id="item">
+                <div id="fix">
+                    <img id ="pin" name="pinButton" src="../Asset/pin1.png" onclick="fix()" />
+                </div>
+                    <h3 id="item-h3">Biacore machine found!</h3>
+                <div id="text-info" class="text"></div>
+            </div>
+        </div>
+        
+
+        <div id="qaBox" class = "boxes">
+            <img id="qaArrowLeft" src = "../Asset/arrowLeft.png" onclick="qaSwitchLeft()"/>
+            <img id="qaArrowRight" src = "../Asset/arrowRight.png" onclick="qaSwitchRight()"/>
+            <img id="qaCross" class="boxCross" src = "../Asset/cross.png" onclick="qaTransition()"/>
+            <img id="qaCross" class="boxCross" src = "../Asset/cross.png" onclick="qaTransition()"/>
+            <div id="qaContent" class="boxContent"></div>
+        </div>
+        
+        <div id="videoBox" class = "boxes">
+            <img id="videoCross" class="boxCross" src = "../Asset/cross.png" onclick="videoTransition()"/>
+            <div id="videoContent" class="boxContent">
+                <iframe class= "video" src="https://www.youtube.com/embed/o8d46ueAwXI" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div id="quickTutorialBox" class = "boxes">
+            <img id="quickTutorialCross" class="boxCross" src = "../Asset/cross.png" onclick="quickTutorialTransition()"/>
+            <div id="quickTutorialContent" class="boxContent">
+                This is a quick tutorial
+            </div>
+        </div>
+        
+        <div id="screenshotAlert">
+            <img src = "../Asset/screenshotIcon.png"/>
+            <p>Screenshot Saved</p>
+        </div>
+
+        <div id="menuBar">
+            
+            <div id="menu-close-expend">&#9776;</div>
+            
+            <table id="menuBarButtonList">
+                <tr>
+                    <td id="resetButton" onclick = "resetTransition()">
+                        <img src = "../Asset/resetIcon.png"/>
+                    </td>
+                    
+                    <td id="qaBoxButton" onclick = "qaTransition()" >
+                        <img src = "../Asset/qaIcon.png"/>
+                    </td>
+                    
+                    <td id="videoBoxButton" onclick = "videoTransition()">
+                        <img src = "../Asset/playerIcon.png"/>
+                    </td>
+
+                    <td id="screenShotButton">
+                        <img src = "../Asset/screenshotIcon.png"/>
+                    </td>
+                    
+                    <td id="quickTutorialBoxButton" onclick = "quickTutorialTransition()">
+                        <img src = "../Asset/questionMark.png"/>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>

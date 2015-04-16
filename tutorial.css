@@ -1,0 +1,234 @@
+* {
+    -webkit-highlight: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /* -webkit-text-size-adjust: 100%; */
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#screenshotAlert{
+    width: 18%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    position: absolute;
+    border-radius: 12px;
+    display: none;
+}
+
+#screenshotAlert img{
+    width:48%;
+    display: table-cell;
+    margin: auto;
+    margin-top: 10px;
+    border: 6px solid white;
+    border-radius: 12px;
+}
+
+#screenshotAlert p{
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+#draggableContainer {
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#menuBar{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#menu-close-expend {
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    background: red;
+    font-size: 36px;
+}
+
+#menuBarButtonList {
+    position: absolute;
+    top: 3px;
+    left: 36px;
+    width: 95%;
+    border-collapse: separate;
+    border-spacing: 5px 1px;
+}
+
+#menuBarButtonList tr td{
+    height: 50px;
+    width: 20%;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-style: none;
+    border-width: 1px;
+    border-color: white;
+}
+
+#menuBarButtonList tr td img{
+    width: auto;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* Note "Please hold your device over the metaio pattern." */
+#info {
+    clear: both;
+    width: 75%;
+    color: #fff;
+    background-color: #000;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#info img {
+    max-width: 100%
+}
+
+/* item found */
+#item {
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+    max-height: 75%;
+    height: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    display: none;
+    overflow: auto;
+}
+
+#item .text {
+    text-align: left;
+    font-size: 12px;
+}
+
+#item .video {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+#fix {
+    width: 10%;
+    height: auto;
+    float: right;
+    padding: 1%;
+    background: transparent;
+    border-radius: 6px;
+}
+
+#pin {
+    width: 90%;
+    height: auto;
+    padding-top: 7%;
+}
+
+#qaArrowLeft {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    width: 10%;
+    height: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+}
+
+#qaArrowRight {
+    position: absolute;
+    top: 6%;
+    left: 18%;
+    width: 10%;
+    height: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+}
+
+#qaInputBox {
+
+    width: 90%;
+    height: 40px;
+
+}
+
+.boxCross {
+    position: absolute;
+    top: 6%;
+    right: 3%;
+    width: 10%;
+    height: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    
+}
+
+.boxContent {
+    clear: both;
+    color: #fff;
+    font-weight: none;
+    font-family: Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    height: 71%;
+    opacity: 0;
+    overflow: auto;
+    -webkit-transition: opacity 0.2s;
+}
+
+.boxes {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    -webkit-transition: top 1s, left 1s, height 1s, width 1s;
+}
+
+.boxes iframe, .boxes object, .boxes embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
